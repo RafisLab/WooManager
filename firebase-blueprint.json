@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "AppSettings": {
+      "title": "Application Settings",
+      "description": "Global application settings including PIN and WooCommerce config",
+      "type": "object",
+      "properties": {
+        "hashedPin": { "type": "string" },
+        "isConfigured": { "type": "boolean" },
+        "wooConfig": {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string" },
+            "consumerKey": { "type": "string" },
+            "consumerSecret": { "type": "string" }
+          }
+        }
+      },
+      "required": ["hashedPin", "isConfigured"]
+    }
+  },
+  "firestore": {
+    "settings/app": {
+      "schema": "AppSettings",
+      "description": "The main settings for the application"
+    }
+  }
+}

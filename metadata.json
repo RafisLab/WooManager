@@ -1,0 +1,6 @@
+{
+  "name": "WooCommerce Order Manager",
+  "description": "Store and manage WooCommerce orders with PIN protection, automated syncing with WordPress, and real-time status updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
